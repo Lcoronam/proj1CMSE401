@@ -1,0 +1,8 @@
+Submitting CPU Benchmark
+Submitted batch job 53904053
+Submitting GPU Benchmark
+Submitted batch job 53904054
+Submitting CPU Accuracy
+Submitted batch job 53904055
+Submitting GPU Accuracy
+Submitted batch job 53904056

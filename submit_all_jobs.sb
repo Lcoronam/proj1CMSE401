@@ -1,0 +1,15 @@
+#!/bin/bash --login
+#SBATCH --job-name=submit_all_jobs
+#SBATCH --output=all_submit.txt
+#SBATCH --time=00:01:00
+#SBATCH --ntasks=1
+
+cd $SLURM_SUBMIT_DIR
+echo "Submitting CPU Benchmark"
+sbatch cpu_bench.sb
+echo "Submitting GPU Benchmark"
+sbatch gpu_bench.sb
+echo "Submitting CPU Accuracy"
+sbatch cpu_acc.sb
+echo "Submitting GPU Accuracy"
+sbatch gpu_acc.sb

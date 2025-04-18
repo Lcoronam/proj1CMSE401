@@ -1,0 +1,21 @@
+#!/bin/bash --login
+#SBATCH --job-name=mlp_gpu_bench
+#SBATCH --output=output_gpu_bench.txt
+#SBATCH --error=error_gpu_bench.txt
+#SBATCH --time=00:10:00
+#SBATCH --ntasks=1
+#SBATCH --gpus=1
+#SBATCH --mem=8G
+#SBATCH --partition=general-gpu
+
+module purge
+module load Python/3.10.4-GCCcore-11.3.0
+module load PyTorch/1.13.1-foss-2022a-CUDA-11.7.0
+module load SciPy-bundle/2022.05-foss-2022a
+
+export PYTHONNOUSERSITE=0
+export PYTHONPATH=$HOME/.local/lib/python3.10/site-packages:$PYTHONPATH
+
+export BENCHMARK_MODE=1
+cd $SLURM_SUBMIT_DIR
+python mlp-gpu.py

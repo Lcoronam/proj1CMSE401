@@ -1,0 +1,16 @@
+BENCHMARK MODE: Using synthetic 1M-row dataset
+Dataset: 1000000 samples, 20 features
+Using device: cpu
+Iteration 0 | Loss: 0.6935
+Iteration 1 | Loss: 0.6706
+Iteration 2 | Loss: 0.6490
+Iteration 3 | Loss: 0.6279
+Iteration 4 | Loss: 0.6070
+Iteration 5 | Loss: 0.5862
+Iteration 6 | Loss: 0.5655
+Iteration 7 | Loss: 0.5452
+Iteration 8 | Loss: 0.5255
+Iteration 9 | Loss: 0.5067
+
+Total training time: 23.39 seconds on cpu
+Test Accuracy: 81.74%

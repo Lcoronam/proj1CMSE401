@@ -1,0 +1,16 @@
+ACCURACY MODE: Using real wine dataset
+Dataset: 4898 samples, 11 features
+Using device: cuda
+Iteration 0 | Loss: 0.5864
+Iteration 1 | Loss: 0.5057
+Iteration 2 | Loss: 0.5016
+Iteration 3 | Loss: 0.4773
+Iteration 4 | Loss: 0.4324
+Iteration 5 | Loss: 0.4507
+Iteration 6 | Loss: 0.4473
+Iteration 7 | Loss: 0.4268
+Iteration 8 | Loss: 0.4050
+Iteration 9 | Loss: 0.4063
+
+Total training time: 0.63 seconds on cuda
+Test Accuracy: 79.39%
